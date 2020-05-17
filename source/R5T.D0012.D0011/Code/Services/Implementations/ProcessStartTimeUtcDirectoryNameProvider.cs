@@ -21,7 +21,7 @@ namespace R5T.D0012.D0011
             this.TimestampUtcDirectoryNameProvider = timestampUtcDirectoryNameProvider;
         }
 
-        public async Task<string> GetProcessStartTimeUtcDirectoryName()
+        public async Task<string> GetProcessStartTimeUtcDirectoryNameAsync()
         {
             var processStartTimeUtc = await this.ProcessStartTimeUtcProvider.GetProcessStartTimeUtcAsync();
 
